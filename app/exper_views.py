@@ -29,6 +29,7 @@ SEARCH_IN_LIVINGLAB_EXPERINECED = str(os.getenv("SEARCH_IN_LIVINGLAB_EXPERINECED
 DOWELL_CONTACT_US_EXPERINECED = str(os.getenv("DOWELL_CONTACT_US_EXPERINECED"))
 RANDOM_GRAPH_EXPERINECED = str(os.getenv("RANDOM_GRAPH_EXPERINECED"))
 DOWELL_PERMUTATION_CALCULATOR_EXPERINECED = str(os.getenv("DOWELL_PERMUTATION_CALCULATOR_EXPERINECED"))
+DOWELL_BUSINESS_ANALYSIS_BY_SAMANTA_EXPERINECED = str(os.getenv("DOWELL_BUSINESS_ANALYSIS_BY_SAMANTA_EXPERINECED"))
 
 
 SAMANTA_CONTENT_EVALUATOR_USER = str(os.getenv("SAMANTA_CONTENT_EVALUATOR_USER"))
@@ -40,6 +41,7 @@ SEARCH_IN_LIVINGLAB_USER = str(os.getenv("SEARCH_IN_LIVINGLAB_USER"))
 DOWELL_CONTACT_US_USER = str(os.getenv("DOWELL_CONTACT_US_USER"))
 RANDOM_GRAPH_USER = str(os.getenv("RANDOM_GRAPH_USER"))
 DOWELL_PERMUTATION_CALCULATOR_USER = str(os.getenv("DOWELL_PERMUTATION_CALCULATOR_USER"))
+DOWELL_BUSINESS_ANALYSIS_BY_SAMANTA_USER = str(os.getenv("DOWELL_BUSINESS_ANALYSIS_BY_SAMANTA_USER"))
 
 VOUCHER_SYSTEM = str(os.getenv("VOUCHER_SYSTEM"))
 CLIENT_VOUCHER_SYSTEM = str(os.getenv("CLIENT_VOUCHER_SYSTEM"))
@@ -298,6 +300,7 @@ class experiences_datacube_services(APIView):
             "UXLIVINGLAB007": DOWELL_CONTACT_US_EXPERINECED,
             "UXLIVINGLAB008": RANDOM_GRAPH_EXPERINECED,
             "UXLIVINGLAB009": DOWELL_PERMUTATION_CALCULATOR_EXPERINECED,
+            "UXLIVINGLAB010": DOWELL_BUSINESS_ANALYSIS_BY_SAMANTA_EXPERINECED
         }
         db0_collection_name = db0_collection.get(product_number)
 
@@ -357,6 +360,7 @@ class experiences_datacube_services(APIView):
             "UXLIVINGLAB007": DOWELL_CONTACT_US_USER,
             "UXLIVINGLAB008": RANDOM_GRAPH_USER,
             "UXLIVINGLAB009": DOWELL_PERMUTATION_CALCULATOR_USER,
+            "UXLIVINGLAB010": DOWELL_BUSINESS_ANALYSIS_BY_SAMANTA_USER
         }
         db_user_collection_name = db0_collection.get(product_number)
 
@@ -450,6 +454,7 @@ class experiences_datacube_services(APIView):
             "UXLIVINGLAB007": DOWELL_CONTACT_US_USER,
             "UXLIVINGLAB008": RANDOM_GRAPH_USER,
             "UXLIVINGLAB009": DOWELL_PERMUTATION_CALCULATOR_USER,
+            "UXLIVINGLAB010": DOWELL_BUSINESS_ANALYSIS_BY_SAMANTA_USER
         }
        
         db_user_collection_name = db0_collection.get(product_number)
@@ -513,6 +518,7 @@ class experiences_datacube_services(APIView):
             "UXLIVINGLAB007": DOWELL_CONTACT_US_USER,
             "UXLIVINGLAB008": RANDOM_GRAPH_USER,
             "UXLIVINGLAB009": DOWELL_PERMUTATION_CALCULATOR_USER,
+            "UXLIVINGLAB010": DOWELL_BUSINESS_ANALYSIS_BY_SAMANTA_USER
         }
         db_user_collection_name = db0_collection.get(product_number)
         response = json.loads(datacube_data_update(
@@ -578,6 +584,7 @@ class experiences_datacube_services(APIView):
             "UXLIVINGLAB007": DOWELL_CONTACT_US_USER,
             "UXLIVINGLAB008": RANDOM_GRAPH_USER,
             "UXLIVINGLAB009": DOWELL_PERMUTATION_CALCULATOR_USER,
+            "UXLIVINGLAB010": DOWELL_BUSINESS_ANALYSIS_BY_SAMANTA_USER
         }
 
         db_user_collection_name = db0_collection.get(product_number)
@@ -799,6 +806,7 @@ class experiences_datacube_services(APIView):
             "UXLIVINGLAB007": DOWELL_CONTACT_US_USER,
             "UXLIVINGLAB008": RANDOM_GRAPH_USER,
             "UXLIVINGLAB009": DOWELL_PERMUTATION_CALCULATOR_USER,
+            "UXLIVINGLAB010": DOWELL_BUSINESS_ANALYSIS_BY_SAMANTA_USER
         }
 
         db_user_collection_name = db0_collection.get(product_number)
@@ -974,6 +982,10 @@ class experiences_datacube_services(APIView):
             "UXLIVINGLAB005": WEBSITE_CRAWL_USER,
             "UXLIVINGLAB006": SEARCH_IN_LIVINGLAB_USER,
             "UXLIVINGLAB007": DOWELL_CONTACT_US_USER,
+            "UXLIVINGLAB008": RANDOM_GRAPH_USER,
+            "UXLIVINGLAB009": DOWELL_PERMUTATION_CALCULATOR_USER,
+            "UXLIVINGLAB010": DOWELL_BUSINESS_ANALYSIS_BY_SAMANTA_USER
+
         }
         db_user_collection_name = db0_collection.get(product_number)
         user_data = json.loads(datacube_data_retrival(
@@ -1067,7 +1079,10 @@ class experiences_report(APIView):
             "UXLIVINGLAB004": LOCATION_SPECIFIC_SEARCH_EXPERINECED,
             "UXLIVINGLAB005": WEBSITE_CRAWL_EXPERINECED,
             "UXLIVINGLAB006": SEARCH_IN_LIVINGLAB_EXPERINECED,
-            "UXLIVINGLAB007":DOWELL_CONTACT_US_EXPERINECED
+            "UXLIVINGLAB007":DOWELL_CONTACT_US_EXPERINECED,
+            "UXLIVINGLAB008": RANDOM_GRAPH_EXPERINECED,
+            "UXLIVINGLAB009": DOWELL_PERMUTATION_CALCULATOR_EXPERINECED,
+            "UXLIVINGLAB010": DOWELL_BUSINESS_ANALYSIS_BY_SAMANTA_EXPERINECED
         }
 
         db0_collection_name = db0_collection_mapping.get(product_number)
