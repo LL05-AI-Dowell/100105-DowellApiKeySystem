@@ -177,6 +177,7 @@ class experiences_datacube_services(APIView):
             "DOWELL CONTACT US" : DOWELL_CONTACT_US_EXPERINECED,
             "RANDOM GRAPH": RANDOM_GRAPH_EXPERINECED,
             "DOWELL PERMUTATION CALCULATOR": DOWELL_PERMUTATION_CALCULATOR_EXPERINECED,
+            "DOWELL BUSINESS ANALYSIS": DOWELL_BUSINESS_ANALYSIS_BY_SAMANTA_EXPERINECED
         }
 
         db0_collection_name = db0_collection_mapping.get(product_name)
