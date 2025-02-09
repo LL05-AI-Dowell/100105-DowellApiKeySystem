@@ -107,7 +107,7 @@ class ExperiencedProductSerializer(serializers.Serializer):
         ('SEARCH IN LIVINGLAB', 'SEARCH IN LIVINGLAB'),
         ('DOWELL CONTACT US', 'DOWELL CONTACT US'),
         ('RANDOM GRAPH','RANDOM GRAPH'),
-        ('DOWELL PERMUTATION CALCULATOR','DOWELL PERMUTATION CALCULATOR')
+        ('DOWELL PERMUTATION CALCULATOR','DOWELL PERMUTATION CALCULATOR'),
         ('DOWELL BUSINESS ANALYSIS','DOWELL BUSINESS ANALYSIS')
     )
     product_name = serializers.ChoiceField(allow_null=False, allow_blank=False, choices=METHOD_CHOICES)
