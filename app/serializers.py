@@ -108,7 +108,9 @@ class ExperiencedProductSerializer(serializers.Serializer):
         ('DOWELL CONTACT US', 'DOWELL CONTACT US'),
         ('RANDOM GRAPH','RANDOM GRAPH'),
         ('DOWELL PERMUTATION CALCULATOR','DOWELL PERMUTATION CALCULATOR'),
-        ('DOWELL BUSINESS ANALYSIS','DOWELL BUSINESS ANALYSIS')
+        ('DOWELL BUSINESS ANALYSIS','DOWELL BUSINESS ANALYSIS'),
+        ('DOWELL LINKEDIN ANALYSIS','DOWELL LINKEDIN ANALYSIS'),
+        ('DOWELL REVIEWS ANALYSIS', 'DOWELL REVIEWS ANALYSIS')
     )
     product_name = serializers.ChoiceField(allow_null=False, allow_blank=False, choices=METHOD_CHOICES)
     email = serializers.CharField(allow_null=False, allow_blank=False)
@@ -126,6 +128,10 @@ class ExperiencedUserDetailsSerializer(serializers.Serializer):
         ('UXLIVINGLAB008', 'UXLIVINGLAB008'),
         ('UXLIVINGLAB009', 'UXLIVINGLAB009'),
         ('UXLIVINGLAB010', 'UXLIVINGLAB010'),
+        ('UXLIVINGLAB011', 'UXLIVINGLAB011'),
+        ('UXLIVINGLAB012', 'UXLIVINGLAB012'),
+        ('UXLIVINGLAB013', 'UXLIVINGLAB013'),
+        ('UXLIVINGLAB014', 'UXLIVINGLAB014'),
     )
     product_number = serializers.ChoiceField(allow_null=False, allow_blank=False, choices=METHOD_CHOICES)
     email = serializers.CharField(allow_null=False, allow_blank=False)
@@ -141,6 +147,10 @@ class ReduceExperiencedSerializer(serializers.Serializer):
         ('UXLIVINGLAB008', 'UXLIVINGLAB008'),
         ('UXLIVINGLAB009', 'UXLIVINGLAB009'),
         ('UXLIVINGLAB010', 'UXLIVINGLAB010'),
+        ('UXLIVINGLAB011', 'UXLIVINGLAB011'),
+        ('UXLIVINGLAB012', 'UXLIVINGLAB012'),
+        ('UXLIVINGLAB013', 'UXLIVINGLAB013'),
+        ('UXLIVINGLAB014', 'UXLIVINGLAB014'),
     )
     product_number = serializers.ChoiceField(allow_null=False, allow_blank=False, choices=METHOD_CHOICES)
     email = serializers.CharField(allow_null=False, allow_blank=False)
@@ -161,6 +171,10 @@ class UseCouponSerializer(serializers.Serializer):
         ('UXLIVINGLAB008', 'UXLIVINGLAB008'),
         ('UXLIVINGLAB009', 'UXLIVINGLAB009'),
         ('UXLIVINGLAB010', 'UXLIVINGLAB010'),
+        ('UXLIVINGLAB011', 'UXLIVINGLAB011'),
+        ('UXLIVINGLAB012', 'UXLIVINGLAB012'),
+        ('UXLIVINGLAB013', 'UXLIVINGLAB013'),
+        ('UXLIVINGLAB014', 'UXLIVINGLAB014'),
     )
     product_number = serializers.ChoiceField(allow_null=False, allow_blank=False, choices=METHOD_CHOICES)
     email = serializers.CharField(allow_null=False, allow_blank=False)
@@ -183,6 +197,10 @@ class ReportUserExperiencedCountSerializer(serializers.Serializer):
         ('UXLIVINGLAB008', 'UXLIVINGLAB008'),
         ('UXLIVINGLAB009', 'UXLIVINGLAB009'),
         ('UXLIVINGLAB010', 'UXLIVINGLAB010'),
+        ('UXLIVINGLAB011', 'UXLIVINGLAB011'),
+        ('UXLIVINGLAB012', 'UXLIVINGLAB012'),
+        ('UXLIVINGLAB013', 'UXLIVINGLAB013'),
+        ('UXLIVINGLAB014', 'UXLIVINGLAB014'),
     )
     product_number = serializers.ChoiceField(allow_null=False, allow_blank=False, choices=METHOD_CHOICES)
     time_period = serializers.ChoiceField(allow_null=False, allow_blank=False, choices=DATE_TYPE_CHOICES)
